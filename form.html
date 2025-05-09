@@ -1,0 +1,105 @@
+<html>
+<head>
+ <style> 
+    body{ 
+ background-color: skyblue; 
+      } 
+    input,table
+    { 
+    border-radius: 20px 20px; 
+    } 
+     input{ font-size: 20; 
+    } 
+    table
+    {
+     font-weight: bold;
+    } 
+     </style> 
+     <script>     
+     setTimeout(function()
+      {        
+       var response = prompt("ENTER YOUR COURSE_ID");     
+          if(response!=null)
+          {  
+           document.getElementById("cid").value= response;     
+            }   
+            }, 2000);  setTimeout(function()
+      {        
+       var response = prompt("WHAT IS YOUR COURSE_CODE");     
+          if(response!=null)
+          {  
+           document.getElementById("CCD").value= response;     
+            }   
+            }, 2000); 
+            setTimeout(function()
+      {        
+       var response = prompt(" ENTER YOUR  COURSE TITLE");     
+          if(response!=null)
+          {  
+           document.getElementById("CTT").value= response;     
+            }   
+            }, 2000); 
+            setTimeout(function()
+      {        
+       var response = prompt(" ENTER YOUR MATRIC NUMBER ");     
+          if(response!=null)
+          {  
+           document.getElementById("MTN").value= response;     
+            }   
+            }, 2000); 
+            setTimeout(function()
+      {        
+       var response = prompt("HOW OLD ARE YOU");     
+          if(response!=null)
+          {  
+           document.getElementById("DOB").value= response;     
+            }   
+            }, 2000); 
+            setTimeout(function()
+      {        
+       var response = prompt("WHAT IS YOUR DEPARTMENT");     
+          if(response!=null)
+          {  
+           document.getElementById("DPT").value= response;     
+            }   
+            }, 2000); 
+            setTimeout(function()
+      {        
+       var response = prompt("WHAT FACULTY DO YOU BELONG TO?");     
+          if(response!=null)
+          {  
+           document.getElementById("FCT").value= response;     
+            }   
+            }, 2000); 
+</script> 
+     </head> <body> 
+      <marquee> 
+         color="purple">        
+             <h1> Welcome to SEN 303 <h1>     
+      
+     </marquee> 
+      
+     <form  action="form.php" method="POST">    
+         <table  cellspacing=20>        
+            <tr>     <td>Course_ID :</td><td><input id="cid" type="text" name="stdName" required /></td>       
+                  </tr>       
+                    <tr>    <td>Course_code : </td><td><input id="CCD" type="text" name="stdCode" required /></td>       
+                        </tr>     
+                      <tr>     <td>Course_title : </td><td><input id="CTT" type="text" name="stdTitle" required /></td>      
+                   </tr>        
+                      <tr>    <td>Matric_no: </td><td><input id="MTN" type="text" name="stdMatric" required /></td>  
+                       </tr>      
+                          <tr>        <td>Date_of_Birth : </td><td><input id="DOB" type="text" name="Dob" required /></td>      
+                             </tr>        
+                                <tr>     <td>Department :  </td><td><input id="DPT" type="text" name="Dept" required /></td>   
+                                 </tr>        
+                               <tr>      <td>Faculty:  </td><td><input id="FCT" type="text" name="Faculty" required /></td>   
+                              </tr>            
+                             </table>   <br>   <input type="Submit" value="Submit"></input>
+                           </form>
+             <form action="form2.php">
+            <input type="submit" value="Retrieve">
+                     </input>
+                        </form>
+     </body> </html> 
+     
